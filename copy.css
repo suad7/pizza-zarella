@@ -1,0 +1,9 @@
+.nav{
+    background-color: brown;
+
+}
+.nav a{
+    background-color: cornsilk;
+    padding: 10px;
+    margin: 5px;
+}
