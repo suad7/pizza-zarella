@@ -2,6 +2,10 @@
   background-color:orange;
 }
 
+.bar{
+  width: fit-content;
+}
+
 body{
   background:url("../images/plash6.jpeg")no-repeat;
   background-size:cover;
