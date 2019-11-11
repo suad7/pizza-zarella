@@ -1,13 +1,19 @@
-.nav{
+.nav {
   background-color:orange;
+  font-family: "Poiret One", cursive;
+  font-size: 2.4vh;
 }
-
-.bar{
-  width: fit-content;
+body {
+  background: url("../images/plash1.jpeg") no-repeat;
+  background-size: cover;
 }
-
-body{
-  background:url("../images/plash6.jpeg")no-repeat;
-  background-size:cover;
-  position: fixed;
+.pp{
+  color:whitesmoke;
+}
+form {
+text-align: right;
+}
+.ee{
+  size: 10vh;
+text-align: center;
 }

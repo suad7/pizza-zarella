@@ -5,22 +5,47 @@
 	<title>Pizza</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+
 <body>
-	<nav class="navbar navbar-default">
-		<div class="container">
+	<div class="container">
+		<nav class="navbar navbar-default">
 			<div class="navbar-header">
 				<strong><a href="#" class="navbar-brand">Pizza zarella</a></strong>
 			</div>
 			<ul class="nav navbar-nav">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
 				<li><a href="#">Order</a></li>
 				<li><a href="#">Menu</a></li>
 				<li><a href="#">Locations</a></li>
 				<li><a href="#">Delivery</a></li>
 			</ul>
-		</div>
-	</nav>
+		</nav>
+		<div class="continer ee">
+		<form>
+			select pizza crust:<br>
+			<input type="text" placeholder="pizza crust" required><br>
+
+			select pizza size:<br>
+			<input type="text" placeholder="size" required><br>
+
+			select meaty pizza tpping:<br>
+			<input type="text" placeholder="pizza topping" required><br>
+
+			<br><br>
+			<br>
+			<a onclick="onCalculate()" value="submit" id="submit" class="btn">SUBMIT</a>
+			<p id="right">All right reserved copyright @Suad</p>
+		</form>
+	</div>
+
+	</div>
+
+
+
+
+
+
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/script.js"></script>
 </body>
