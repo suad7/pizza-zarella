@@ -1,5 +1,5 @@
 .nav {
-  background-color:orange;
+  background-color: orange;
   font-family: "Poiret One", cursive;
   font-size: 2.4vh;
 }
@@ -7,15 +7,16 @@ body {
   background: url("../images/plash6.jpeg") no-repeat;
   background-size: cover;
 }
-.pp{
-  color:whitesmoke;
-}
+
 form {
-text-align: right;
+  text-align: right;
 }
-.ee{
+.ee {
   margin-top: 15vh;
-margin-left: 1vh;
+  margin-left: 1vh;
   text-align: center;
-color:black;
+  color: black;
+  font-family: "Poiret One", cursive;
+ font-size: 2.5vh;
+
 }
