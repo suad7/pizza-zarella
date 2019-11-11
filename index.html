@@ -51,7 +51,7 @@
 					<option value="Spinach">SPINACH</option>
 					<option value="Pineapple">PINEAPPLE</option>
 				</select>
-				<br>	
+				<br>
 				<input type="number" id="number" class="btn bg-success" placeholder="Number"><br>
 				<br>
 				<button type="button" class="btn btn-warning" id="totalCost" onclick="onCalculate()">Check out</button>
@@ -70,60 +70,37 @@
 					</table>
 				</div>
 			</div>
-			<div class="sect-4" id="textPrice">
-				<div class="pick">
+			<br><br><br>
+			<div class="modal-body mx-3">
+				<div class="md-form mb-5">
 					<p style="text-align: center;">PLEASE CONFIRM YOUR ORDER</p>
-					<hr>
-					<p id="pz">Pizza Size</p>
-					<p id="cr">Crust</p>
-					<p id="mt">Meat Topping</p>
-					<p id="vt">Vegetable Topping</p>
-					<P id="tc">Total Cost</P>
+					<input type="text" id="name" placeholder='Your name' required>
+				</div>
+				<div class="md-form mb-5">
+					<input type='text' id="lpocation" placeholder="Your Location" required>
+				</div>
+				<div class="md-form mb-4">
+					<input type="number" id="address" placeholder="Your Address" required>
 				</div>
 			</div>
-			<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-				aria-hidden="true">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header text-center">
-							<h4>Fill in delivery detail</h4>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-					</div>
-					<div class="modal-body mx-3">
-						<div class="md-form mb-5">
-							<input type="text" id="name" placeholder='Your name' required>
-						</div>
-						<div class="md-form mb-5">
-							<input type='text' id="lpocation" placeholder="Your Location" required>
-						</div>
-						<div class="md-form mb-4">
-							<input type="number" id="address" placeholder="Your Address" required>
-						</div>
-					</div>
-					<div class="modal-footer d-flex justify-content-center">
-						<button id="delivery" onclick="validate()" class="btn btn-deep-orange">Send</button>
-					</div>
-				</div>
+			<br>
+			<div class="modal-footer d-flex justify-content-center"id="k">
+				<button id="delivery" onclick="validate()" class="btn btn-deep-orange">Send</button>
 			</div>
-			<div class="text-center">
-				<a href="" id="mode" class="btn btn-default btn-rounded mb-4" data-toggle="modal"
-					data-target="#modalRegisterForm">Delivery</a>
-			</div>
-			<div id="contact">
-				<hr>
-				<div class="contact">
-					<span>Tel<small>: 0700000010</small></span> <br>
-					<span>G-Mail<small>: sm.ha21@hotmail.com</small></span>
-				</div>
-			</div>
+		</div>
+	</div>
+	<div id="contact">
+		<hr>
+		<div class="contact">
+			<span>Tel<small>: 0700000010</small></span> <br>
+			<span>G-Mail<small>: sm.ha21@hotmail.com</small></span>
+		</div>
+	</div>
 
 
 
-			<script src="js/jquery-3.3.1.js"></script>
-			<script src="js/script.js"></script>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

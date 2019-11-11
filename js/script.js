@@ -1,40 +1,35 @@
 function onCalculate() {
-    var pizzaCrust = ["crispy", "stuffed", "gluten free"];
-    var pizzaSize = ["large ksh 600", "medium ksh 500", "small ksh"];
-    var meatyPizzatpping = ["peperonni", "sausage", "chicken"];
-    var veggyPizzatopping = ["onion", "spinach", "pineapple"];
-
-    var size = document.getElementById("size").value;
+    var sizeP = document.getElementById("size").value;
     var veggyToppings = document.getElementById("veggy").value;
-    var crust = document.getElementById("crust").value;
+    var crustP = document.getElementById("crust").value;
     var meatToppings = document.getElementById("meaty").value;
-    var num = document.getElementById("number").value;
+    var num = parseInt(document.getElementById("number").value);
 
     function order() {
-        return size + " " + veggyToppings + " " + crust + " " + meatToppings;
+        return sizeP + " " + veggyToppings + " " + crustP + " " + meatToppings;
     }
     function size() {
         var price = 0;
-        if (size === "Small") {
+        if (sizeP === "Small") {
             price = 300;
         }
-        else if (size === "Medium") {
+        else if (sizeP === "Medium") {
             price = 500;
         }
-        else if (size === "Large") {
+        else if (sizeP === "Large") {
             price = 600;
         }
         return price;
     }
     function crust() {
         var price1 = 0;
-        if (crust === "Crispy") {
+        if (crustP === "Crispy") {
             price1 = 100;
         }
-        else if (crust === "Stuffed") {
+        else if (crustP === "Stuffed") {
             price1 = 150;
         }
-        else if (crust === "Glutten-free") {
+        else if (crustP === "Glutten-free") {
             price1 = 200;
         }
         return price1;
@@ -65,16 +60,25 @@ function onCalculate() {
         }
         return price3;
     }
-
-    alert(veggy());
-    var total;
-    total = crust() + meaty() + veggy();
-
+    function pizzaTotal() {
+        return (size() + crust() + meaty() + veggy()) * num;
+    }
     $("tbody#summary:last").append("<tr>" +
         "<td>" + order() + "</td>" +
         "<td>" + num + "</td>" +
-        "<td>" + "ksh:" + total+ "</td>" +
+        "<td>" + "ksh:" + pizzaTotal() + "</td>" +
         "</tr>");
+};
+function validate() {
+    var nameDelivery = document.getElementById("name").value;
+    var lpocation = document.getElementById("lpocation").value
+    if(nameDelivery==="")
+    alert("Invalid Name")
+    else if (lpocation==="")
+    alert("Invalid location")
+    else
+    alert("Thank you " + nameDelivery + " for your order. Pizza will be delivered at " + lpocation)
+
 }
 
 
