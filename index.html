@@ -22,32 +22,94 @@
 			</ul>
 		</nav>
 		<div class="continer ee">
-		<form>
-			select pizza crust:<br>
-			<input type="text" placeholder="pizza crust" required><br>
-
-			select pizza size:<br>
-			<input type="text" placeholder="size" required><br>
-
-			select meaty pizza tpping:<br>
-			<input type="text" placeholder="pizza topping" required><br>
-
-			<br><br>
-			<br>
+			<form>
+				<label></label> pizza crust:<br></label>
+				<select class="form-control" id="crust">
+					<option>SELECT PIZZA CRUST </option><br>
+					<option value="Crispy">CRISPY </option>
+					<option value="Stuffed">STUFFED </option>
+					<option value="Glutten-free">GLUTEN FREE </option>
+				</select>
+				<label></label> pizza size:<br></label>
+				<select class="form-control" id="size">
+					<option>SELECT PIZZA SIZE </option><br>
+					<option value="Large">LARGE KSH 600</option>
+					<option value="Medium">MEDIUM KSH 500</option>
+					<option value="Small">SMALL KSH 300 </option>
+				</select>
+				select meaty pizza tpping:<br>
+				<select class="form-control" id="meaty">
+					<option>SELECT PIZZA MEATY TOPPING </option><br>
+					<option value="Peperonni">PEPERONNI </option>
+					<option value="Sausage">SAUSAGE </option>
+					<option value="Chicken">CHICKEN </option>
+				</select>
+				<label>Veggy Pizza Topping;</label>
+				<select class="form-control" id="veggy">
+					<option>SELECT PIZZA VEGGY TOPPING </option><br>
+					<option value="Onion">ONION </option>
+					<option value="Spinach">SPINACH </option>
+					<option value="Pineapple">PINEAPPLE </option>
+				</select>
+				<input type="submit" class="btn btn-warning btn-rounded waves-effect btn-lg" id="totalCost"
+					value="Check Out!!!">
+			</form>
 			<a onclick="onCalculate()" value="submit" id="submit" class="btn">SUBMIT</a>
-			<p id="right">All right reserved copyright @Suad</p>
-		</form>
-	</div>
 
-	</div>
-
-
-
-
-
-
-	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/script.js"></script>
+			<div class="sect-4" id="textPrice">
+				<div class="pick">
+					<p style="text-align: center;">PLEASE CONFIRM YOUR ORDER</p>
+					<hr>
+					<p id="pz">Pizza Size</p>
+					<p id="cr">Crust</p>
+					<p id="mt">Meat Topping</p>
+					<p id="vt">Vegetable Topping</p>
+					<P id="tc">Total Cost</P>
+				</div>
+			</div>
+			<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header text-center">
+							<h4>Fill in delivery detail</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					</div>
+					<div class="modal-body mx-3">
+						<div class="md-form mb-5">
+							<input type="text" id="name" placeholder='Your name' required>
+						</div>
+						<div class="md-form mb-5">
+							<input type='text' id="lpocation" placeholder="Your Location" required>
+						</div>
+						<div class="md-form mb-4">
+							<input type="number" id="address" placeholder="Your Address" required>
+						</div>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button id="delivery" onclick="validate()" class="btn btn-deep-orange">Send</button>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="" id="mode" class="btn btn-default btn-rounded mb-4" data-toggle="modal"
+				  data-target="#modalRegisterForm">Delivery</a>
+			  </div>
+			  <div id="contact">
+				<hr>
+				<div class="contact">
+				  <span>Tel<small>: 0700000010</small></span> <br>
+				  <span>G-Mail<small>: sm.ha21@hotmail.com</small></span>
+				</div>
+			  </div>
+			  
+			
+			
+			  <script src="js/jquery-3.3.1.js"></script>
+			<script src="js/script.js"></script>
 </body>
 
 </html>

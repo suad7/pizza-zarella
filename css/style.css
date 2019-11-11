@@ -4,7 +4,7 @@
   font-size: 2.4vh;
 }
 body {
-  background: url("../images/plash2.jpeg") no-repeat;
+  background: url("../images/plash6.jpeg") no-repeat;
   background-size: cover;
 }
 .pp{
@@ -14,6 +14,8 @@ form {
 text-align: right;
 }
 .ee{
-  size: 10vh;
-text-align: center;
+  margin-top: 15vh;
+margin-left: 1vh;
+  text-align: center;
+color:black;
 }
