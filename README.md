@@ -1,6 +1,6 @@
 ### PRIJECT NAME
 Pizza zarella
-![screenshot](images/screenshot.png)
+<img src="images/screenshot.png">
 ### PROJECT AUTHOR
 Suad mohamed
 ### DESCRIPTION
