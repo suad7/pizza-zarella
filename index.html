@@ -21,14 +21,14 @@
 				<li><a href="#">Delivery</a></li>
 			</ul>
 		</nav>
-		<div class="continer ee">
+		<div class="container ee">
 			<form>
 				<label></label> pizza crust:<br></label>
 				<select class="form-control" id="crust">
 					<option>SELECT PIZZA CRUST </option><br>
-					<option value="Crispy">CRISPY </option>
-					<option value="Stuffed">STUFFED </option>
-					<option value="Glutten-free">GLUTEN FREE </option>
+					<option value="Crispy">CRISPY</option>
+					<option value="Stuffed">STUFFED</option>
+					<option value="Glutten-free">GLUTEN FREE</option>
 				</select>
 				<label></label> pizza size:<br></label>
 				<select class="form-control" id="size">
@@ -40,21 +40,36 @@
 				select meaty pizza tpping:<br>
 				<select class="form-control" id="meaty">
 					<option>SELECT PIZZA MEATY TOPPING </option><br>
-					<option value="Peperonni">PEPERONNI </option>
-					<option value="Sausage">SAUSAGE </option>
-					<option value="Chicken">CHICKEN </option>
+					<option value="Peperonni">PEPERONNI</option>
+					<option value="Sausage">SAUSAGE</option>
+					<option value="Chicken">CHICKEN</option>
 				</select>
 				<label>Veggy Pizza Topping;</label>
 				<select class="form-control" id="veggy">
 					<option>SELECT PIZZA VEGGY TOPPING </option><br>
-					<option value="Onion">ONION </option>
-					<option value="Spinach">SPINACH </option>
-					<option value="Pineapple">PINEAPPLE </option>
+					<option value="Onion">ONION</option>
+					<option value="Spinach">SPINACH</option>
+					<option value="Pineapple">PINEAPPLE</option>
 				</select>
-				<input type="submit" class="btn btn-warning btn-rounded waves-effect btn-lg" id="totalCost"
-					value="Check Out!!!">
+				<br>	
+				<input type="number" id="number" class="btn bg-success" placeholder="Number"><br>
+				<br>
+				<button type="button" class="btn btn-warning" id="totalCost" onclick="onCalculate()">Check out</button>
 			</form>
-			
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table table-bordered">
+						<tbody id="heading">
+							<th>order</th>
+							<th>no.</th>
+							<th>price</th>
+						</tbody>
+						<tbody id="summary">
+
+						</tbody>
+					</table>
+				</div>
+			</div>
 			<div class="sect-4" id="textPrice">
 				<div class="pick">
 					<p style="text-align: center;">PLEASE CONFIRM YOUR ORDER</p>
