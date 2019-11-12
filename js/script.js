@@ -76,7 +76,7 @@ function validate() {
     else if (lpocation === "")
         alert("Invalid location")
     else
-        alert("Thank you " + nameDelivery + " for your order. Pizza will be delivered at" + lpocation + " and your charges for delivery is ksh150")
+        alert("Thank you " + nameDelivery + " for your order. Pizza will be delivered at " + lpocation + " and your charges for delivery is ksh150 ")
     $("#x")[0].request()
 
 }
