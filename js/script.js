@@ -4,7 +4,6 @@ function onCalculate() {
     var crustP = document.getElementById("crust").value;
     var meatToppings = document.getElementById("meaty").value;
     var num = parseInt(document.getElementById("number").value);
-
     function order() {
         return sizeP + " " + veggyToppings + " " + crustP + " " + meatToppings;
     }
@@ -72,12 +71,12 @@ function onCalculate() {
 function validate() {
     var nameDelivery = document.getElementById("name").value;
     var lpocation = document.getElementById("lpocation").value
-    if(nameDelivery==="")
-    alert("Invalid Name")
-    else if (lpocation==="")
-    alert("Invalid location")
+    if (nameDelivery === "")
+        alert("Invalid Name")
+    else if (lpocation === "")
+        alert("Invalid location")
     else
-    alert("Thank you " + nameDelivery + " for your order. Pizza will be delivered at " + lpocation)
+        alert("Thank you " + nameDelivery + " for your order. Pizza will be delivered at " + lpocation)
     $("#x")[0].request()
 
 }

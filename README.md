@@ -1,5 +1,6 @@
 ### PRIJECT NAME
 Pizza zarella
+### SCREEN SHOT
 ![screenshot](images/Screenshot.png)
 ### PROJECT AUTHOR
 Suad mohamed
@@ -18,10 +19,17 @@ This a web application where customers order different sizes of pizzas with one 
 ### DEPLOYING (LIVE LINK)
 https://suad7.github.io/pizza-zarella/
 ### BEHAVIOR DRIVEN DEVELOPMENT (SPECIFICATIONS)
-ehavior	Input	Output
-User select pizza size, crust, meat topping or veggy topping	Pizza size: Large, Pizza crust: Crispy, Meat topping: Sausage Vegetable topping: pineapple Total Cost: ksh 900	Large, Crispy, Sausage, Pineapple, ksh900
-User enter name, location and addrress	name:Suad, location: ngong, Address:23433,pristage	Your charges for delivery is ksh150, Thank you for Your Purchase!Your order will be delivered to your location
-Support and contact details.
+1.Behavior
+- User select pizza size, crust, meat topping or veggy topping.
+- User enter name, location and addrress.
+
+2.Input
+- Pizza size: Large, Pizza crust: Crispy, Meat     topping: Sausage Vegetable topping: pineapple     Total Cost: ksh 800.
+- User enter name, location and addrress.
+
+3.Output
+- Large ,Pineapple ,Crispy, Sausage ksh800.
+- Thank you Suad for your order. Pizza will be delivered at (your location).
 ### CONTACT 
 sm.ha21@hotmail.com
 ### LICENSE 
