@@ -8,7 +8,7 @@ Suad mohamed
 This a web application where customers order different sizes of pizzas with one or more toppings and request for delivery to the location thy are.
 ### PROJECT SETUP INSTRUCTION
 - git clone https://suad7.github.io/pizza-zarella/ to local machine
-- cd into a folde named 'Tumaa-pizza'
+- cd into a folde named 'pizza'
 - open index.html from a browser
 ### TECHNOLOGIES USED
 - HTML
