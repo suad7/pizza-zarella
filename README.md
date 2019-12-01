@@ -1,7 +1,7 @@
 ### PRIJECT NAME
 Pizza zarella
 ### SCREEN SHOT
-![screenshot](images/plash6.jpeg)
+![screenshot](images/screenshot.png)
 ### PROJECT AUTHOR
 Suad mohamed
 ### DESCRIPTION
